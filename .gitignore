@@ -12,19 +12,25 @@ dist
 dist-ssr
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .cert
 =======
 >>>>>>> ec39b31 (Create .gitignore)
 =======
 .cert
 >>>>>>> b1991d8 (add http-server)
+=======
+>>>>>>> ec39b31 (Create .gitignore)
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/launch.json
 !.vscode/extensions.json
+<<<<<<< HEAD
 !.vscode/settings.json
+=======
+>>>>>>> ec39b31 (Create .gitignore)
 .idea
 .DS_Store
 *.suo
