@@ -10,7 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+<<<<<<< HEAD
 .cert
+=======
+>>>>>>> ec39b31 (Create .gitignore)
 *.local
 
 # Editor directories and files
