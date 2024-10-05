@@ -2,7 +2,7 @@
 Basic THREE.js template using [Vite](https://vitejs.dev).
 
 Allows testing and modifying [official THREE.js examples](https://threejs.org/examples/) locally, at lightning speed.
-After trying Parcel and Rollup, this is probably the most developer-friendly to start THREE.js development in 2023 : it's insanely fast, it supports live reload out of the box, while remaining simple to use and to extend.
+After trying Parcel and Rollup, this is probably the most developer-friendly to start THREE.js development in 2024 : it's insanely fast, it supports live reload out of the box, while remaining simple to use and to extend.
 
 ## Batteries included
 
@@ -21,16 +21,17 @@ Install [Node.js](https://nodejs.org)
 
 - Clone or download repo
 - run `npm install` : fetches and install all dependencies
-- `npm run build` : packages all code and resources into the `dist` folder
 - `npm run dev` : launches a server and opens your browser in `https://localhost:5173` by default
-- Edit your code : your changes are reflected instantly!
+  - Edit your code : your changes are reflected instantly!
+- `npm run build` : packages all code and resources into the `dist` folder, ready for deployment.
+
 
 ## HTTPS
 
-HTTPS is required to use some features such as the WebXR API
+HTTPS is required to use the WebXR API
 
 
-### Using Cloudflare Tunnel for free without a domain (recommended)
+### Using Cloudflare Tunnel for free without an account or a domain (recommended)
 
   - Install [Homebrew](https://brew.sh)
 
@@ -86,3 +87,12 @@ Check these tunneling alternatives such as `ngrok` or `zrok` for simple personal
 In order to use `https`, copy your certificates to the `.cert` folder, and change the `serve` command to:
 
 `"serve": "http-server dist -S -C .cert/cert.pem -K .cert/key.pem`
+
+# Credits
+
+- Template code inspired by https://threejs.org/examples/webxr_ar_cones.html 
+
+- Some very interesting features (emulator, github pages deployment) have been borrowed from https://github.com/meta-quest/webxr-first-steps 
+
+  - Make sure to check this excellent tutorial out! Even if it is mostly focused on VR, it is a great introduction on how to combine WebXR with THREE.js.
+  - See [Deployment Instructions](https://github.com/meta-quest/webxr-first-steps?tab=readme-ov-file#build-and-deploy)
