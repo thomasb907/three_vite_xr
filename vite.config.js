@@ -6,13 +6,18 @@ export default defineConfig({
     clearScreen: false,
     optimizeDeps: {
         esbuildOptions: {
-            target: 'es2022'
+            supported: {
+                'top-level-await': true
+            }
         }
     },
-
+    esbuild: {
+        supported: {
+            'top-level-await': true
+        }
+    },
     build: {
         sourcemap: true,
-        target: 'es2022'
     },
     server: {
         open: true
