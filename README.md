@@ -12,6 +12,8 @@ Pre-configured to support :
 - ammo.js wasm physics library
 - VSCode launch scripts
 - THREE.js type definitions : for IntelliSense in VS Code
+- recommended VS Code extensions
+- deployment
 
 Have a look at vite.config.js and customize it to your needs (additional libraries, file formats etc.).
 
@@ -87,6 +89,36 @@ Check these tunneling alternatives such as `ngrok` or `zrok` for simple personal
 In order to use `https`, copy your certificates to the `.cert` folder, and change the `serve` command to:
 
 `"serve": "http-server dist -S -C .cert/cert.pem -K .cert/key.pem`
+
+## Deploying the App with GitHub Pages
+
+(original: https://github.com/meta-quest/webxr-first-steps?tab=readme-ov-file#build-and-deploy)
+
+This repository includes a ready-to-use GitHub Actions workflow located at `.github/workflows/deploy.yml`, which automates both the build and deployment to GitHub Pages. Once enabled, every time you push changes to the `main` branch, a new build will automatically be deployed.
+
+#### Steps to Enable GitHub Pages Deployment:
+
+1. **Fork this repository** to your own GitHub account.
+2. Navigate to your forked repository’s **Settings**.
+3. Scroll down to the **Pages** section.
+4. Under **Build and Deployment**, change the **Source** to **GitHub Actions**.
+
+Once this is set, GitHub Actions will handle the build and deployment process automatically. Any time you push changes to the `main` branch, the app will be built and deployed to GitHub Pages without any additional manual steps.
+
+You can monitor the status of the deployment job or manually re-run it via the **Actions** tab in your GitHub repository.
+
+### Deploying to Your Own Hosting Solution
+
+If you prefer to host the app yourself, you’ll need to manually build the app and then deploy the generated files to your hosting provider.
+
+To generate the build, run the following command:
+
+```bash
+npm run build
+```
+
+This will create a `dist` folder containing the static files for the app. You can then upload these files to your hosting platform of choice.
+
 
 # Credits
 
