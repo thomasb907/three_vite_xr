@@ -135,3 +135,43 @@ This will create a `dist` folder containing the static files for the app. You ca
 
   - Make sure to check this excellent tutorial out! Even if it is mostly focused on VR, it is a great introduction on how to combine WebXR with THREE.js.
   - See [Deployment Instructions](https://github.com/meta-quest/webxr-first-steps?tab=readme-ov-file#build-and-deploy)
+
+## Deploying the App with GitHub Pages
+
+(original: https://github.com/meta-quest/webxr-first-steps?tab=readme-ov-file#build-and-deploy)
+
+This repository includes a ready-to-use GitHub Actions workflow located at `.github/workflows/deploy.yml`, which automates both the build and deployment to GitHub Pages. Once enabled, every time you push changes to the `main` branch, a new build will automatically be deployed.
+
+#### Steps to Enable GitHub Pages Deployment:
+
+0. **IMPORTANT: Set the `base` variable** in `vite.config.js` (default name `/three_vite`) to the actual name of your repository. Your app will be deployed to https://[GITUSERNAME].github.io/[REPOSITORY_NAME] (for example https://fdoganis.github.io/three_vite)
+1. **Fork this repository** to your own GitHub account.
+2. Navigate to your forked repository’s **Settings**.
+3. Scroll down to the **Pages** section.
+4. Under **Build and Deployment**, change the **Source** to **GitHub Actions**.
+
+Once this is set, GitHub Actions will handle the build and deployment process automatically. Any time you push changes to the `main` branch, the app will be built and deployed to GitHub Pages without any additional manual steps.
+
+You can monitor the status of the deployment job or manually re-run it via the **Actions** tab in your GitHub repository.
+
+### Deploying to Your Own Hosting Solution
+
+If you prefer to host the app yourself, you’ll need to manually build the app and then deploy the generated files to your hosting provider.
+
+To generate the build, run the following command:
+
+```bash
+npm run build
+```
+
+This will create a `dist` folder containing the static files for the app. You can then upload these files to your hosting platform of choice.
+
+
+# Credits
+
+- Template code inspired by https://threejs.org/examples/webxr_ar_cones.html 
+
+- Some very interesting features (emulator, github pages deployment) have been borrowed from https://github.com/meta-quest/webxr-first-steps 
+
+  - Make sure to check this excellent tutorial out! Even if it is mostly focused on VR, it is a great introduction on how to combine WebXR with THREE.js.
+  - See [Deployment Instructions](https://github.com/meta-quest/webxr-first-steps?tab=readme-ov-file#build-and-deploy)
