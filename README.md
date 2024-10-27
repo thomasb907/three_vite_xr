@@ -1,15 +1,16 @@
-# three_vite
-Basic THREE.js template using [Vite](https://vitejs.dev).
+# three_vite_xr
+THREE.js + WebXR template using [Vite](https://vitejs.dev).
 
-Allows testing and modifying [official THREE.js examples](https://threejs.org/examples/) locally, at lightning speed.
-After trying Parcel and Rollup, this is probably the most developer-friendly to start THREE.js development in 2024 : it's insanely fast, it supports live reload out of the box, while remaining simple to use and to extend.
+Allows testing and modifying [official THREE.js WebXR examples](https://threejs.org/examples/?q=webxr) locally, at lightning speed.
 
 ## Batteries included
 
 Pre-configured to support :
 
+- WebXR initialization
 - glTF file loading
 - ammo.js wasm physics library
+  - which is fast, but you might consider using the excellent and simpler [Cannon-es](https://fdoganis.github.io/slides/cannon.html) instead
 - VSCode launch scripts
 - THREE.js type definitions : for IntelliSense in VS Code
 - recommended VS Code extensions
@@ -123,9 +124,13 @@ This will create a `dist` folder containing the static files for the app. You ca
 
 # Credits
 
-- Template code inspired by https://threejs.org/examples/webxr_ar_cones.html 
+- XR enhanced version of the original ```three_vite``` template : https://github.com/fdoganis/three_vite (MIT License)
+  
+- THREE.js WebXR code inspired by https://threejs.org/examples/webxr_ar_cones.html (MIT License)
 
-- Some very interesting features (emulator, github pages deployment) have been borrowed from https://github.com/meta-quest/webxr-first-steps 
+- Test model (red cube) from https://github.com/cx20/gltf-test/tree/master/sampleModels/Box (CC BY License)
+
+- Some very interesting features (emulator, github pages deployment) have been borrowed from https://github.com/meta-quest/webxr-first-steps  (MIT License)
 
   - Make sure to check this excellent tutorial out! Even if it is mostly focused on VR, it is a great introduction on how to combine WebXR with THREE.js.
   - See [Deployment Instructions](https://github.com/meta-quest/webxr-first-steps?tab=readme-ov-file#build-and-deploy)
