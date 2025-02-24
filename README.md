@@ -30,8 +30,6 @@ Install [Node.js](https://nodejs.org)
 
 ## HTTPS
 
-## HTTPS
-
 HTTPS is required to use the WebXR API
 
 

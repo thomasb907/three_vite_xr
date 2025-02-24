@@ -4,7 +4,6 @@
 // see https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking)
 
 import {
-<<<<<<< HEAD
   AmbientLight,
   BoxGeometry,
   Clock,
@@ -26,18 +25,6 @@ import { XRDevice, metaQuest3 } from 'iwer';
 // XR
 import { XRButton } from 'three/addons/webxr/XRButton.js';
 
-=======
-  PerspectiveCamera,
-  Scene,
-  WebGLRenderer,
-  BoxGeometry,
-  Mesh,
-  MeshNormalMaterial,
-  AmbientLight,
-  Clock
-} from 'three';
-
->>>>>>> 9a80c8f (Update main.js)
 // If you prefer to import the whole library, with the THREE prefix, use the following line instead:
 // import * as THREE from 'three'
 
