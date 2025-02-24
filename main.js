@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use strict";
 
 // Import only what you need, to help your bundler optimize final code size using tree shaking
@@ -26,11 +25,6 @@ import { XRDevice, metaQuest3 } from 'iwer';
 // XR
 import { XRButton } from 'three/addons/webxr/XRButton.js';
 
-=======
-// Import only what you need, to help your bundler optimize final code size using tree shaking
-// see https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking)
-
->>>>>>> ca2ddf2 (Create main.js)
 // If you prefer to import the whole library, with the THREE prefix, use the following line instead:
 // import * as THREE from 'three'
 
