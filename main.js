@@ -144,6 +144,8 @@ const init = () => {
   xrButton.style.backgroundColor = 'skyblue';
   document.body.appendChild(xrButton);
 
+  // oui
+
   const controls = new OrbitControls(camera, renderer.domElement);
   //controls.listenToKeyEvents(window); // optional
   controls.target.set(0, 1.6, 0);
